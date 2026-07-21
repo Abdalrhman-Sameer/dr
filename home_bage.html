@@ -77,10 +77,6 @@ overflow:scroll;
 background-color:white;
 }
 
-.ap{
-display:inline;
-}
-
 alt{
 color:red;
 }
@@ -129,10 +125,13 @@ margin:10px;
 }
 
 .formbox{
+display:flex;
+flex-direction:column;
 color:white;
 border:2px dotted red;
 padding:10px;
 margin:10px;
+align-items:center;
 }
 
 input, select, textarea{
@@ -147,7 +146,7 @@ margin:5px;
 
 <nav> 
 <ul>
-<li><a href="#about">about</a></li>
+<li><a href="#About">about</a></li>
 <li><a href="#Ad">AD</a></li>
 <li><a href="#movies">movies</a></li>
 <li><a href="#Your-Feedback">Your Feedback</a></li>
@@ -183,7 +182,7 @@ Extra services
 
 <hr>
 
-<table  id="movies" style="text-shadow: 2px 4px 2px red; border:2px solid red">
+<table  id="movies" style="text-shadow: 2px 4px 2px red; border:2px solid red box">
 <caption style="color:red;">Cinema Movies Table</caption>
 
 <tr>
@@ -308,22 +307,25 @@ Extra services
 
 <!-- هون اعلانات -->
 <h3 id="Ad" class="midtext">Look at this cute cat.</h3>
-<a href="#Ad"><img src="cat.png" class="for-Ads1" alt="cat programer"></a>
+<a href="https://www.instagram.com/abds15309/"><img src="cat.png" class="for-Ads1" alt="cat programer"></a>
 
 <hr>
 
+
 <!-- عن اصحاب المشروع -->
-<p id="about" class="scroll">
+<h1> About</h1>
+<p id="About" class="scroll">
 <mark>الي اشتغلوا على المشروع</mark><br>
 المهندس الصوتيات عبدالرحمن <br>
 المصور المحترف عبدالرحمن<br>
 المبرمج العريق عبدالرحمن <br>
 مستلم صفحاتنا على السوشيل ميدا عبدالرحمن<br>
 مرشح الفلام اوس حمدان<br>
-جالب البوسترات اوس حمدان
+جالب البوسترات اوس حمدان<br>
+محمد احمد الغالي
 </p>
 
-<p class="ap">
+<p>
 <a href="https://www.instagram.com/dadad6971/">
 <img src="https://play-lh.googleusercontent.com/bh871pyeIpMnJxGYKmTJCm-5VwIYrPUYhHQcCky0B-DpsMoPCWVSDKz0Ic7MLsGuLmS4F_-iE6BilqsUM2DloA=w240-h480-rw" width="50px">
 </a>
@@ -331,40 +333,40 @@ Extra services
 
 <hr>
 
-<!-- اراء المعجبين -->
+<!-- معلومات المستخدم -->
 <div class="formbox">
 <h2 style="color:red; text-align:center;">Extra Form Information</h2>
 
 <form action="#Your-Feedback">
 
-<label style="color:white;">Your Name:</label>
+<label style="color:white;">Your Name:</label><br>
 <input type="text" placeholder="اكتب اسمك" required><br>
 
-<label style="color:white;">Your Email:</label>
+<label style="color:white;">Your Email:</label><br>
 <input type="email" placeholder="example@email.com"><br>
 
-<label style="color:white;">Password:</label>
+<label style="color:white;">Password:</label><br>
 <input type="password" pattern="[0-9]{4,8}" placeholder="4 to 8 numbers"><br>
 
-<label style="color:white;">Phone:</label>
+<label style="color:white;">Phone:</label><br>
 <input type="tel" placeholder="009627XXXXXXXX"><br>
 
-<label style="color:white;">Number of tickets:</label>
+<label style="color:white;">Number of tickets:</label><br>
 <input type="number" min="1" max="10" value="1"><br>
 
-<label style="color:white;">Favorite color:</label>
+<label style="color:white;">Favorite color:</label><br>
 <input type="color"><br>
 
-<label style="color:white;">Choose week:</label>
+<label style="color:white;">Choose week:</label><br>
 <input type="week"><br>
 
-<label style="color:white;">Choose month:</label>
+<label style="color:white;">Choose month:</label><br>
 <input type="month"><br>
 
-<label style="color:white;">Choose date and time:</label>
+<label style="color:white;">Choose date and time:<br>
 <input type="datetime-local"><br>
-
-<label style="color:white;">Choose your favorite movie:</label>
+</label>
+<label style="color:white; ">Choose your favorite movie:</label><br>
 <input list="movies-list">
 <datalist id="movies-list">
 <option value="Action movie">
@@ -375,6 +377,7 @@ Extra services
 </div>
 <br>
 <hr>
+<!-- اراء المعجبين -->
 <p id="Your-Feedback"> 
 <label class="midtextl">اعطينا رأيك بمشروعنا</label>
 </p>
@@ -407,7 +410,7 @@ Extra services
 <input type="checkbox"> التصميم
 </label><br>
 
-<label class="midtextl">حدد تاريخ الرسالة</label>
+<label class="midtextl">حدد تاريخ الرسالة</label><br>
 <input type="date"><br>
 
 <input style="color:red;" type="submit" value="ارسل">
@@ -418,7 +421,5 @@ Extra services
 <a style="text-decoration:none; color:green;" href="mailto:abds0630@gmail.com">اضغط هون</a>
 
 </form>
-
-
 </body>
 </html>
